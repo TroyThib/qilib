@@ -14,7 +14,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   -moz-box-sizing: border-box;  
   box-sizing: border-box;  
   text-align:left;
-  border:1px solid red;
+  border:0px solid red;
 }  
 html {height: 100%;}  
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }  
@@ -115,7 +115,7 @@ header #header_text {
 	left:0;
 	color:#fff;
 	padding:0px 0px 0px 174px;
-	border:1px solid green;
+	border:0px solid green;
 }
 
 header #header_text h1 {color:#fff;}
@@ -136,7 +136,7 @@ header nav {
 	z-index:999;
 	top:0;
 	left:0;
-	border:1px solid red;
+	border:0px solid red;
 }
 
 header nav li {
@@ -157,6 +157,11 @@ header nav li:nth-child(2) {
 	 color:#7a3b8a;
 }
 
+header #header_img #qilib_nav_logo {
+	float:left;
+}
+
+/* sub nav styles */
 header nav ul li ul {
 	position:absolute;
 	z-index:999;
@@ -174,21 +179,22 @@ header nav ul li ul {
     border-radius: 7px 7px 7px 7px;
 	background: rgb(255,255,255); /* Old browsers */
 	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
 }
 
-header nav ul li ul li {
+header nav ul li ul li, header nav ul li ul li:nth-child(2), header nav ul li ul li:first-child {
 	display:block;	
 	float:none;
-	margin:0 0 10px 0;
+	margin:0px 0px 0 0;
 	padding:10px;
+	color:#7a3b8a;
 }
 
-header #header_img #qilib_nav_logo {
-	float:left;
-}
+header nav ul li ul li {}
+
+
 /* END OF NAV STYLES */
 
 .sub_header {
