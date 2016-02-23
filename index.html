@@ -1,69 +1,92 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>qilib</title>
-<meta name="description" content="">
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
-<link href="css/styles.css" rel="stylesheet" type="text/css">
-<link rel="icon" type="image/x-icon" href="favicon.ico" />
+<title>Galderma - Qilib</title>
+	<meta name="description" content="">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/jquery.js"></script>
+	<script src="js/functions.js"></script>
+	 
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
 </head>
 <body>
-<!-- START OF HEADER -->
-  <header>
-  
-    <nav>   
-      <ul>
-      	<li><img src="images/qilib_nav_logo.png" id="qilib_nav_logo"></li>
-        <li>WEEK 4<br>
-            <img src="images/arrow_up_prlp.png"><br>
-            <ul>
-              <li>WEEK 1</li>
-              <li>WEEK 2</li>
-              <li>WEEK 3</li>
-            </ul>
-        </li>
-        <li>GROWTH GOAL</li>
-        <li>ACTION PLAN</li>
-        <li>RESULTS IN PROGRESS</li>
-      </ul>
-      <div class="clear_both"></div>
-    </nav>
-    <div id="header_text">
-      <h1>Week 1</h1>
-      <h2>Aliquam faucibus ipsum non elementum</h2>
-    </div>
-    <div id="header_bottom">
-    Integer porta vehicula turpis. Praesent eleifend et turpis quis ullamcorper. Donec maximus, enim mollis ullamcorper viverra, nisi eros tincidunt nibh, ut suscipit tellus est ut nunc. Aenean aliquam ligula id nibh ultricies scelerisque.
-    </div>
-    <div id="bottle_phone">
-      <img src="images/bottle_phone.png" id="bottle_phone_img">
-    
-    </div>
-    <img src="images/headers/header_img_wk1.jpg" id="header_img">
-  </header>
-<!-- END OF HEADER -->
-
-  <section class="sub_header">
-  
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed risus vehicula enim porta faucibus et quis mi. Aenean tempus porttitor sem eu euismod. Quisque consectetur dui ac tincidunt mattis. Aenean ante tellus, luctus vitae ligula et, elementum ullamcorper purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque in vehicula nisi, a dignissim libero. Proin ac metus sed odio iaculis pretium vitae nec leo. Morbi sagittis porta rhoncus. 
-  
-  </section>
- 
- 
-
- 
-<!-- ::::: START OF SCRIPTS ::::::::::::::: -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<!--[if IE]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<!--
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
--->
-<script src="js/functions.js"></script>
+	<div id="bodyWrapper">
+		<div id="bodyContent">
+			<div id="headerSection" class="contentBlock">
+				<div id="headerTop">
+					<div id="headerBG" class="scrollUp"></div>
+					<div id="headerWeek">
+						<div class="weekBlock">
+							<div class="weekBlockText">choose your week</div>
+							<a href="010"><div class="weekCircle toolTip" toolTip="Week 1">&#9702;</div></a>
+							<a href="020"><div class="weekCircle toolTip" toolTip="Week 2">&#9702;</div></a>
+							<a href="030"><div class="weekCircle toolTip" toolTip="Week 3">&#9702;</div></a>
+							<a href="040"><div class="weekCircle toolTip" toolTip="Week 4">&#9702;</div></a>
+							<a href="050"><div class="weekCircle toolTip" toolTip="Week 5">&#9702;</div></a>
+							<a href="060"><div class="weekCircle toolTip" toolTip="Week 6">&#9702;</div></a>
+							<a href="070"><div class="weekCircle toolTip" toolTip="Week 7">&#9702;</div></a>
+							<a href="080"><div class="weekCircle toolTip" toolTip="Week 8">&#9702;</div></a>
+							<a href="090"><div class="weekCircle toolTip" toolTip="Week 9">&#9702;</div></a>
+							<a href="100"><div class="weekCircle toolTip" toolTip="Week 10">&#9702;</div></a>
+							<a href="110"><div class="weekCircle toolTip" toolTip="Week 11">&#9702;</div></a>
+							<a href="120"><div class="weekCircle toolTip" toolTip="Week 12">&#9702;</div></a>
+						</div>
+						<div class="weekBlock2">
+							<a href=""><div class="weekBlockArrow"><img src="img/arrowBackWhite.png"/></div></a>
+							<a href=""><div class="weekBlock2Title">Week 1</div></a>
+							<a href=""><div class="weekBlockArrow"><img src="img/arrowNextWhite.png"/></div></a>
+						</div>
+					</div>
+					<div id="headerNav">
+						<div class="sectionContent">
+							<div class="headerLink"><a href="http://www.galderma.com/Medical-Solutions/Major-Brands/qilib"><img src="img/qilibNavLogo.png"/></a></div>
+							<div class="headerLink">
+								<a id="weekLink" href="#week">WEEK 1</a><br>
+								<img src="/img/headerArrowUp.png"/>
+							</div>
+							<div class="headerLink"><a href="#growth"><img src="img/navTarget.png"/>GROWTH GOAL</a></div>
+							<div class="headerLink"><a href="#action"><img src="img/navCalender.png"/>ACTION PLAN</a></div>
+							<div class="headerLink"><a href="#results"><img src="img/navGraph.png"/>RESUTS IN PROGRESS</a></div>
+						</div>
+					</div>
+					<div id="headerContent" class="scrollUp"></div>
+				</div>
+				<div id="headerAd" class="scrollUp"></div>
+			</div>
+			<div id="growth" class="sectionSeparator scrollUp"><img src="img/growthSep.png"></div>
+			<div id="growthSection" class="contentBlock white scrollUp"></div>
+			<div id="action" class="sectionSeparator scrollUp"><img src="img/actionSep.png"></div>
+			<div id="actionSection" class="contentBlock lavender scrollUp"></div>
+			<div id="results" class="sectionSeparator scrollUp"><img src="img/resultsSep.png"></div>
+			<div id="resultsSection" class="contentBlock white scrollUp"></div>
+			<div id="footer" class="contentBlock darkPurple scrollUp">
+				<div class="sectionContent">
+					<div class="footerLeft">
+						<div class="footerLink"><a href="#">Where to Buy</a></div>
+						<div class="footerLink"><a href="#">Offers</a></div>
+						<div class="footerLink"><a href="#">Healthcare Professional Information</a></div>
+						<div class="footerLink"><a href="#">Frequently Asked Questions</a></div>
+						<div class="footerLink"><a href="#">Contact Us</a></div>
+					</div>
+					<div class="footerRight">
+						<div class="footerLogo"><img src="img/galdermaLogo.png" /></div>
+						&copy;2016 Galderma Laboratories, LP. United States. All rights reserved.<br>
+						All trademarks are the property of their respective owners.<br>
+						This site is intended for U.S. audiences only.
+					</div>
+				</div>
+			</div>
+			<div id="footerSocial" class="contentBlock lightPurple scrollUp">
+				<div class="sectionContent">
+					<div class="footerSocialLeft"><a href="#"><img src="img/iconTwitter.jpg"/></a><a href="#"><img src="img/iconFacebook.jpg"/></a><a href="#"><img src="img/iconYoutube.jpg"/></a></div>
+					<div class="footerSocialRight"><a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a> | <a href="#">Sitemap</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="toolTipWrapper"><div id="toolTipArrow"><img src="img/toolTipArrow.png"/></div><div id="toolTip"></div></div>
 </body>
 </html>
