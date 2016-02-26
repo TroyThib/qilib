@@ -379,6 +379,7 @@ p{
 .footerSocialRight a{
 	position:relative;
 	text-decoration:none;
+	color:#3a3a58;
 	margin:0 10px;
 }
 .footerSocialRight a:last-child{
@@ -441,8 +442,11 @@ p{
 	width:100%;
 	line-height:80px;
 	color:#ffffff;
-	font-size:42px;
+	font-size:24px;
 	width:100%;
+}
+.weekBlock2 a{
+	text-decoration:none;
 }
 .weekBlock2Title{
 	color:#ffffff;
@@ -483,6 +487,15 @@ p{
 	-moz-border-radius: 2px;
 	border-radius: 2px;
 }
+.actionSectionContent{
+	display:none;
+}
+.actionStepArrow{
+	position:absolute;
+	cursor:pointer;
+	z-index:2;
+	padding:20px;
+}
 /*  Start of Week and Gender Sections  */
 .actionStep{
 	position:relative;
@@ -492,18 +505,30 @@ p{
 #actionSection{
 	padding-bottom:0;
 }
-/*#action_010 .firstSection{*/
+#actionSection .sectionContent .sectionTitle{
+	margin-bottom:0;
+}
 #actionSection .firstSection{
 	position:relative;
 	float:left;
 	width:50%;
 }
-/*#action_010 .secondSection{*/
 #actionSection .secondSection{
 	position:relative;
 	float:left;
 	width:50%;
 	text-align:right;
+}
+.printTracker{
+	position:relative;
+	margin-top:10%;
+	border:1px solid #823491;
+	max-width:175px;
+	padding:10px;
+	text-align:center;
+	color:#823491;
+	border-radius:5px;
+	cursor:pointer;
 }
 .headerAd .sectionContent{
 	overflow:visible;
@@ -560,6 +585,10 @@ p{
 #headerAd_030 .sectionSubTitle{
 	margin-top:0;
 }
+#actionAd_030 .firstSection, #actionAd_030 .secondSection, #actionAd_031 .firstSection, #actionAd_031 .secondSection{
+	float:left;
+	margin-top:10%;
+}
 /*  End of Week and Gender Sections */
 
 @media screen and (max-width:600px) {
@@ -588,8 +617,10 @@ p{
 		background-image:none;
 	}
 	.headerLink{
-		width:60%;
+		width:100%;
 		margin:10px;
+		height:30px;
+		line-height:30px;
 	}
 	.headerLink:nth-child(1){
 		text-align:left;
